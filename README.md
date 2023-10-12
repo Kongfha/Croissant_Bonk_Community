@@ -20,7 +20,7 @@ JavaScript, CSS, HTML for both aesthetics and functionality
 
 **Back end:** <br>
 JavaScript and Node.js for responsiveness and database communication <br>
-Hugging Face API for Bonk Bard <br>
+Hugging Face API for Bonk Bard via Iframe <br>
 MongoDB for storing chat messages and users' scores
 
 ## Development Journey
