@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Popins:300,400,500,600,700,800,900&display=swap');
+
+:root {
+  --my-color: #100830;
+  /* --my-color: #fff830; */
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgba(211, 211, 211, 0.3); /* Use rgba for transparency */
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align content from the right */
+  box-shadow: 0 0 25px 0 black;
+  z-index: 1000;
+}
+
+
+nav {
+  flex: 1;
+  text-align: right;
+  font-size: 16px;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 12px;
+}
+
+header li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block; /* Add this line to make links behave as blocks */
+  padding: 5px 10px; /* Optional: Add padding to create space around links */
+  transition: background-color 0.3s; /* Optional: Add a smooth transition effect */
+}
+
+header li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Add a background color on hover */
+  border-radius: 5px; /* Optional: Add rounded corners to the links on hover */
+  /* font-weight: bold; */
+}
+
+
+body {
+  /* height: 200vh;
+  background-size: cover; */
+  font-family: 'Popins', sans-serif;
+
+}
+
+/* Style the home page section */
+
+#star{
+  z-index: 2;
+}
+
+#frontTower{  
+  z-index: 5;
+}
+
+#behideTower{
+  z-index: 4;
+}
+
+#sun{
+  mix-blend-mode: screen;
+  z-index: 3;
+}
+
+section{
+  overflow: hidden;
+}
+
+#home {
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  /* color: #350f42; */
+  color: #f1eaea;
+  text-shadow: 2px 2px rgb(16,8,48, 0.7);
+  overflow: hidden;
+}
+
+#home-bg {
+  min-height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  z-index: 1;
+}
+
+img{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}/* Style the content within the home section */
+
+
+.home-content {
+  position: absolute;
+  top: 44%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 100%; /* You can adjust this percentage as needed */
+}
+
+.home-content h1 {
+  font-family: 'Popins',sans-serif;
+  font-weight: bold;
+  margin: 0; /* Adjust the margin values as needed */
+  padding: 0%; /* Adjust the percentage as needed */
+  font-size: 60px; /* You can adjust the font size as needed */
+}
+
+.home-content h2 {
+  font-family: 'Popins',sans-serif;
+  font-weight: Regular;
+  margin: auto;
+  padding: 2.6%; /* Adjust the percentage as needed */
+  font-size: 30 px; /* You can adjust the font size as needed */
+}
+
+/* Add a gradual slide effect to the content when scrolling */
+#before-body{
+  top: 0;
+  left: 0;
+  content:'';
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(transparent 80%, var(--my-color));
+
+  /* background: linear-gradient(transparent 80%, #100830); */
+  /* background: linear-gradient(to top, #886bff 0%, rgba(136, 107, 255, 0)); */
+  z-index: 110;
+}
+
+
+#Body{
+  min-height: 100vh;
+  position:relative;
+  width: 100%;
+  padding: 100px;
+
+  background-color: var(--my-color);
+  /*background: linear-gradient(180deg, #100830 var(--Body-gradient-percent-left), #100830 var(--Body-gradient-percent-right)); 
+  /* background: #100830; */
+  z-index: 100;
+}
+
+.home::after {
+  content: '';
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); /* Add a gradient overlay */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: height 0.5s ease;
+  z-index: 100; /* Transition height property for a smooth effect */
+}
+
+/* Increase the height as the user scrolls down */
+#home.scrolled::after {
+  height: 100px; /* Adjust the height as needed */
+}
+
+/*Bonk*/
+
+#bonk {
+  min-height: 106vh;
+  position: relative;
+  text-align: center;
+  color: #000000;
+  overflow: hidden;
+}

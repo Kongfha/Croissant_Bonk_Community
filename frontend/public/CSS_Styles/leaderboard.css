@@ -1,0 +1,66 @@
+#bonk-enjoyer {
+  background: linear-gradient(#472675f2, #1C3A57f2);
+}
+
+.boardcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75vh;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+  }
+
+  /* table {
+    
+  } */
+  
+  .boardtable {
+    background-image: url(https://media.istockphoto.com/id/1633149572/photo/modern-abstract-pixelated-purple-background.webp?b=1&s=170667a&w=0&k=20&c=z5rAqa4O-jhcsk2vDVNzBuKte1eIV_9GD7HiigrGUQY=);
+    width: 85%;
+    border: 2px solid rgb(206, 127, 222);
+    border-radius: 20px;
+    margin: 30px auto;
+    background-position: center;
+    background-size: cover;
+    
+    animation: bounce 1s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-19px); 
+    }
+  }
+  .boardheader {
+    height: 5vh;
+    font-size : 30px;
+    background-color:rgba(0, 0, 0, 0.1);
+    color:wheat;
+    text-align: left;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .boardcell {
+    height: 5vh;
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+  }
+
+
+  .boardcell td{
+    width: 5fr;
+  }
+  
+  .leaderboard-table tr:hover {
+    background-color: #ddd;
+  }

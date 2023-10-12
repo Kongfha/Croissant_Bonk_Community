@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croissant Bonk Community</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS_Styles/styles.css">
+    <link rel="stylesheet" href="CSS_Styles/apparea.css">
+    <link rel="stylesheet" href="CSS_Styles/leaderboard.css">
+    <link rel="stylesheet" href="CSS_Styles/bonkbard.css">
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="#home"> Home </a></li>
+                <li><a href="#app-area"> Bonk Area </a></li>
+                <li><a href="#bonk-enjoyer"> Bonk Enjoyer </a></li>
+                <li><a href="#bonk-bard"> Bonk Bard </a></li>
+                <li><a href="#"> About </a></li>
+            </ul>
+        </nav>  
+    </header>
+    <main class="bg">
+        <section id="home">
+            <img src = "/images/stars.png" id="star">
+            <img src = "/images/sun.png" id="sun">
+            <img src = "/images/bg_front.png" id="frontTower">
+            <img src = "/images/bg_behide.png" id="behideTower">
+            <div id="home-bg"></div>
+            <div class="home-content" id="content">
+                <h1 id ="text">Croissant Bonk Community</h1>
+                <h2 id ="btn">Small Community for CEDT</h2>
+            </div>
+            <section id="before-body"></section>
+        </section>
+        <!-- <section id = "Body"></div>
+        </section>
+        <section id="bonk">
+            <div class="bonk-bg"> </div>
+        </section> -->
+        
+        <section id="app-area">
+            <span class="notflow">
+                <h1> Welcome to Bonk Area </h1>
+                <div id="grid-container" class="app-animation">
+                    <div class="grid-content">
+                        <section id = "bonk-container">
+                            <div class="bonk-area" id="leader-board"> Bonk Me Area </div>
+                            <!-- <br></br> -->
+                            <div class="bonk-area" id="score"> Score :
+                                <span class = "bonk-area" id="sc_point"> 0 </span>
+                            </div>
+                            <!-- <br></br> -->
+                            <button id="bonk-btn"></button> 
+                            <!-- <br></br> -->
+                            <div class="form__group field">
+                                <input type="input" class="form__field" placeholder="Name" name="name" id='user' required />
+                                <label for="name" class="form__label">Username</label>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <div class="grid-content">
+                        <section id="chat-box">
+                            <div id="chat-header">
+                                <h2>Bonk Chat</h2>
+                            </div>
+                            <div class="chat-messages" id="chat-messages">
+                                <!-- Chat messages will be displayed here -->
+                                <div class="message from-other">
+                                    <h4 id = "user_name"> Kirito101 </h4>
+                                    <p>Hi there! I have a question.</p>
+                                </div>
+                            </div>
+                            <div class="user-input">
+                                <input type="text" id="message" placeholder="Type your message...">
+                                <button id="send_green">Send</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </span>
+        </section>
+    
+        <!-- Leader Board -->
+        <section id="bonk-enjoyer">
+            <div class = "boardcontainer">
+                <table class="boardtable" id ="scoreboard">
+                    <tr class="boardheader">
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Score</th>
+                    </tr>
+                    
+                </table>
+            </div>
+        </section>
+        <section id="bonk-bard">
+            <iframe
+                id = "bard-area"
+                src="https://kongfha-klonsuphap-generator.hf.space"
+                frameborder="5px"
+                width="100%"
+                height="100%"
+            ></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+    <script type="module" src="scripts/main.js"></script>
+    <script src = "scripts/change_color.js"> </script>
+</body>
+</html>
